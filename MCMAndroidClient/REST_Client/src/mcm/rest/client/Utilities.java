@@ -14,7 +14,7 @@ public class Utilities {
         public static final String ID_PARAM = "idkey";
     
         public static final String TH4 = "";
-  	public static final int CAMERA_PIC_REQUEST = 1337;
+        public static final int CAMERA_PIC_REQUEST = 1337;
 	
 	public static String MCMTPHandlerGET ="http://ecx-xxx-xxx-xxx-xxx.compute-1.amazonaws.com:8080/MCM/tphandler";
 	
