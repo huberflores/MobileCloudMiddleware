@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>MobileCloudMiddleware</groupId>
+  <artifactId>MobileCloudMiddleware</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <modules>
+    <module>Manager</module>
+    <module>Handler</module>
+  </modules>
+  
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+       
+    <dependency>
+      <groupId>org.igniterealtime.smack</groupId>
+      <artifactId>smack</artifactId>
+      <version>3.2.1</version>
+    </dependency>
+    
+   <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.0.1</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.5</version>
+      <scope>test</scope>
+    </dependency>
+     
+    <dependency>
+      <artifactId>activation</artifactId>
+      <groupId>javax.activation</groupId>
+      <type>jar</type>
+      <version>1.1</version>
+    </dependency>
+     
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpcore</artifactId>
+      <type>jar</type>
+      <version>4.0.1</version>
+    </dependency> 
+     
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <type>jar</type>
+      <version>4.0</version>
+    </dependency>
+          
+    <dependency>
+      <artifactId>commons-logging</artifactId>
+      <groupId>commons-logging</groupId>
+      <type>jar</type>
+      <version>1.1.1</version>
+    </dependency>
+        
+    <dependency>
+      <groupId>com.googlecode.json-simple</groupId>
+	  <artifactId>json-simple</artifactId>
+	  <version>1.1</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>com.google.android.gcm.server</groupId>
+      <artifactId>gcm-server</artifactId>
+      <version>1.0.3</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>WebApiWrapper.mcminteroperability </groupId>
+      <artifactId>mcm-wrapper</artifactId>
+      <version>1.0.0</version>
+    </dependency>	
+  		
+  	
+  	</dependencies>
+  </dependencyManagement>
+  
+  
+  <build>
+  	<pluginManagement>  
+                <plugins>
+                        <!-- Licence headers -->
+                        <plugin>
+                                <inherited>false</inherited>
+                                <groupId>com.mycila.maven-license-plugin</groupId>
+                                <artifactId>maven-license-plugin</artifactId>
+                                <version>1.9.0</version>
+                                <configuration>
+                                        <strictCheck>true</strictCheck>
+                                        <header>${project.basedir}/lgpl_header.txt</header>
+                                        <failIfMissing>true</failIfMissing>
+                                        <aggregate>true</aggregate>
+                                        <properties>
+                                                <projectname>Mobile Cloud Middleware</projectname>
+                                                <projecturl>http://math.ut.ee</projecturl>
+                                                <organization>University of Tartu</organization>
+                                                <owner>Huber Flores</owner>
+                                                <year>${project.inceptionYear}</year>
+                                                <email>huber@ut.ee</email>
+                                                <artid>${project.artifactId}</artid>
+                                        </properties>
+                                        <mapping>
+                                                <scala>JAVADOC_STYLE</scala>
+                                                <conf>SCRIPT_STYLE</conf>
+                                        </mapping>
+                                        <excludes>
+                                                <exclude>.gitignore</exclude>
+                                                <exclude>.cache</exclude>
+                                                <exclude>**/site.xml</exclude>
+                                                <exclude>*.log</exclude>
+                                                <exclude>*.srt</exclude>
+                                                <exclude>*.csv</exclude>
+                                                <exclude>*.txt</exclude>
+                                                <exclude>*.json</exclude>
+                                                <exclude>.idea/**</exclude>
+                                                <exclude>**/src/main/resources/lgpl_header.txt</exclude>
+                                                <exclude>**/src/test/resources/**</exclude>
+                                                <exclude>**/src/test/data/**</exclude>
+                                        </excludes>
+                                </configuration>
+                                <executions>
+                                        <execution>
+                                                <id>check-headers</id>
+                                                <phase>verify</phase>
+                                                <goals>
+                                                        <goal>format</goal>
+                                                </goals>
+                                        </execution>
+                                </executions>
+                        </plugin>
+
+                        <plugin>
+                                <groupId>org.apache.maven.plugins</groupId>
+                                <artifactId>maven-release-plugin</artifactId>
+                                <version>2.3.2</version>
+                                <configuration>
+                                        <tagBase>https://svn.apache.org/repos/asf/maven/components/releases</tagBase>
+                                </configuration>
+                        </plugin>
+
+
+
+                        <plugin>
+                                <groupId>org.apache.maven.plugins</groupId>
+                                <artifactId>maven-dependency-plugin</artifactId>
+                                <version>2.2</version>
+                        </plugin>
+                </plugins>
+          </pluginManagement>
+        </build>
+  
+  
+</project>

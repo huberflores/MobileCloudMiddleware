@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>MobileCloudMiddleware</groupId>
+    <artifactId>MobileCloudMiddleware</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>MobileCloudMiddleware</groupId>
+  <artifactId>Manager</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>Manager Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+      <artifactId>activation</artifactId>
+      <groupId>javax.activation</groupId>
+    </dependency>
+    
+    
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+    </dependency>
+    
+    <dependency>
+      <groupId>com.googlecode.json-simple</groupId>
+	  <artifactId>json-simple</artifactId>
+    </dependency>
+
+	<dependency>
+		<groupId>com.google.code.gson</groupId>
+		<artifactId>gson</artifactId>
+		<version>1.4</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>commons-fileupload</groupId>
+		<artifactId>commons-fileupload</artifactId>
+		<version>1.2.2</version>
+	</dependency>
+    
+    <dependency>
+      <groupId>com.google.android.gcm.server</groupId>
+      <artifactId>gcm-server</artifactId>
+    </dependency>          
+    
+    <dependency>
+      <groupId>WebApiWrapper.mcminteroperability </groupId>
+      <artifactId>mcm-wrapper</artifactId>
+    </dependency>
+    
+    
+    <dependency>
+      <groupId>com.notnoop.apns</groupId>
+      <artifactId>apns</artifactId>
+      <version>0.1.6</version>
+    </dependency>  
+    
+    <dependency>
+      <groupId>org.igniterealtime.smack</groupId>
+      <artifactId>smack</artifactId>
+      <version>3.2.1</version>
+    </dependency>
+    
+    <dependency>
+	  <groupId>org.igniterealtime.smack</groupId>
+	  <artifactId>smackx</artifactId>
+	  <version>3.2.1</version>
+    </dependency>   
+   
+  </dependencies>
+  
+  
+  
+  <build>
+    <finalName>Manager</finalName>
+  </build>
+</project>

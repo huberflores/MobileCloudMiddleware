@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>MobileCloudMiddleware</groupId>
+    <artifactId>MobileCloudMiddleware</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>mc.cs.ut.ee.handler</groupId>
+  <artifactId>Handler</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>Handler Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+      <artifactId>activation</artifactId>
+      <groupId>javax.activation</groupId>
+    </dependency>
+        
+    
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+    </dependency>
+               
+            
+   </dependencies>
+
+    <build>
+  <pluginManagement>  
+    <plugins>
+     <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+          <compilerArguments>
+            <endorseddirs>${endorsed.dir}</endorseddirs>
+          </compilerArguments>
+        </configuration>
+     </plugin>
+     
+     <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.1</version>
+        <configuration>
+            <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+      
+      <plugin>  
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-dependency-plugin</artifactId>
+         <version>2.3.2</version>
+         <executions>
+            <execution>
+               <phase>validate</phase>
+               <goals>
+                 <goal>copy</goal>
+               </goals>
+             <configuration>
+               <outputDirectory>${endorsed.dir}</outputDirectory>
+               <silent>true</silent>
+               <artifactItems>
+                  <artifactItem>
+                     <groupId>javax</groupId>
+                     <artifactId>javaee-endorsed-api</artifactId>
+                     <version>6.0</version>
+                     <type>jar</type>
+                  </artifactItem>
+               </artifactItems>
+              </configuration>
+            </execution>
+         </executions>
+      </plugin>
+  </plugins>  
+    
+  </pluginManagement>
+  
+  <finalName>Handler</finalName>
+  </build>
+</project>
