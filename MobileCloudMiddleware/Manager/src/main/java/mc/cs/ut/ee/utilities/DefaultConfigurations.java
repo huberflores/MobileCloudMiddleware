@@ -9,12 +9,12 @@ public final class DefaultConfigurations {
 	
 	
 	//Cloud credentials
-	public static final String AMAZON_ACCESSKEY = "AKIAJFIEZ5567RYA4UKQ";
-	public static final String AMAZON_SECRETKEY = "rgPrHsnAtRl+T/SxafYr2tj4xt1Jl00KEVUfDuU5";
+	public static final String AMAZON_ACCESSKEY = "your-access-key";
+	public static final String AMAZON_SECRETKEY = "your-secret-key";
 	
 	
 	//AMI
-	public static final String AMI_TEST = "ami-7b680212";
+	public static final String AMI_TEST = "ami-7b6xxxx";
 	
 	
 
