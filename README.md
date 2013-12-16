@@ -11,6 +11,8 @@ Maven : version >= 3.0.4
 
 m2e Eclipse Plugin (optional for development)
 
+Web server with Servlet container (e.g. Tomcat)
+
 
 Installation
 -------------
@@ -25,6 +27,9 @@ $ git clone https://github.com/huberflores/MobileCloudMiddleware.git
 ```xml
 $ mvn clean install
 ````
+
+Locate the generated wars into the Web server
+
 
 USAGE
 ----
