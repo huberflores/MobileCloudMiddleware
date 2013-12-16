@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.64"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:text="@string/get" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:text="@string/post" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:text="@string/camera" />
+    </LinearLayout>
+
+</LinearLayout>

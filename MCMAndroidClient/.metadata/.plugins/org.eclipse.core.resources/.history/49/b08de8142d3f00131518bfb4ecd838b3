@@ -1,0 +1,33 @@
+package mcm.rest.client;
+
+public class Utilities {
+	
+	public static String idKey = "AKIAIJWVQSBLQ4VY6NWQ";
+	public static String secretKey = "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";
+	   
+	//public static String secretKey = "zUBBWleQPSSPDO8XpfmKjT9fJvEoouSLuFIJ8g";
+	//public static String idKey = "qWmzuvv8MvADE2TgduZ9RGXsnUaJ1EOBtbhiew";
+	public static String secretKeyAmazon = "tcxNLYryj12MOirD1bGdFM334dERUf7/7cC4xSBM";
+	public static String idKeyAmazon = "AKIAIJWVQSBLQ4VY6NWQ";
+	public static String provider = "walrus";
+	private static String PROXY = "193.40.5.245:3128";
+	private static String EMPTY = "";
+	protected static String imageId ="emi-DB2F1551";
+	public static final String EUCALYPTUS = "walrus";
+    public static final String AMAZON = "amazon";
+    public static final String GOOGLE = "google";
+    public static final String SECRET_KEY_PARAM ="stkey";
+    public static final String IMAGE_PARAM = "image";
+    public static final String ID_PARAM = "idkey";
+    public static final String PROVIDER_PARAM = "provider";
+    public static final String TH4 = "";
+	public static final int CAMERA_PIC_REQUEST = 1337;
+	
+	public static String MCMTPHandlerGET ="http://ec2-107-20-77-57.compute-1.amazonaws.com:8080/MCM/tphandlerget";
+	
+	public static String MCMTPHandlerPOST = "http://ec2-184-73-70-92.compute-1.amazonaws.com:8080/ClojureAWS-S3/tphandler";
+	 
+	
+	
+    
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, REST_ClientActivity!</string>
+    <string name="app_name">REST_Client</string>
+    <string name="get">Get</string>
+    <string name="post">Post</string>
+    <string name="camera">Camera</string>
+
+</resources>
