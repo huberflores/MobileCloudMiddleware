@@ -14,7 +14,7 @@ public final class DefaultConfigurations {
 	
 	
 	//AMI
-	public static final String AMI_TEST = "ami-7b6xxxx";
+	public static final String AMI_TEST = "ami-7b6xxxx"; 
 	
 	
 
