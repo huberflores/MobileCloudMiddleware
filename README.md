@@ -4,6 +4,10 @@ Mobile Cloud Middleware
 Service-oriented middleware utilized to delegate mobile tasks to multiple clouds. The middleware abstracts Web APIs from different cloud vendors using Clojure.
 
 
+![alt text](https://raw.github.com/huberflores/MobileCloudMiddleware/master/UT_BasicDelegationModel.png "Service-oriented model")
+
+[Figure's reference](http://www.sciencedirect.com/science/article/pii/S0164121213002318)
+
 Requirements
 -------------
 
