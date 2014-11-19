@@ -118,6 +118,6 @@ Dependecy is defined in pom.xml as
 
 How to cite
 -----------
-If you are using the tool for your research, please do not forget to cite
+If you are using the tool for your research, please do not forget to cite. Thanks!
 
 - Flores, Huber, and Satish Srirama. ["Mobile Cloud Middleware"](http://www.sciencedirect.com/science/article/pii/S0164121213002318) Journal of Software and Systems, Volume 92, June 2014, Pages 82–94.
