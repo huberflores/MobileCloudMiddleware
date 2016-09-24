@@ -120,4 +120,21 @@ How to cite
 -----------
 If you are using the tool for your research, please do not forget to cite. Thanks!
 
-- Flores, Huber, and Satish Srirama. ["Mobile Cloud Middleware"](http://www.sciencedirect.com/science/article/pii/S0164121213002318) Journal of Software and Systems, Volume 92, June 2014, Pages 82–94.
+- H. Flores, S.N. Srirama. ["Mobile Cloud Middleware"](http://www.sciencedirect.com/science/article/pii/S0164121213002318) Journal of Software and Systems, volume 92, pages 82-94, 2014, [doi:10.1016/j.jss.2013.09.012](http://dx.doi.org/10.1016/j.jss.2013.09.012), (IF: 1.352). 
+
+
+**BibTex**
+```xml
+@article{flores2014mobile,
+  title={Mobile cloud middleware},
+  author={Flores, Huber and Srirama, Satish Narayana},
+  journal={Journal of Systems and Software},
+  volume={92},
+  pages={82--94},
+  year={2014},
+  publisher={Elsevier}
+}
+``` 
+
+
+
